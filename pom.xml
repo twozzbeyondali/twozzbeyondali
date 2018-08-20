@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.22aw.opensource</groupId>
+    <groupId>cn.com.22aw.opensource</groupId>
     <artifactId>brickman-community</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
