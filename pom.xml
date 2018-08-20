@@ -8,6 +8,9 @@
     <artifactId>brickman-community</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+    <modules>
+        <module>brickman-community-spider</module>
+    </modules>
 
     <build>
         <plugins>
