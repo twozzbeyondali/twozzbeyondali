@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.22aw.opensource</groupId>
-    <artifactId>brickman-communication</artifactId>
+    <artifactId>brickman-community</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
