@@ -10,12 +10,16 @@
     <version>1.0.0</version>
     <modules>
         <module>brickman-community-spider</module>
+        <module>brickman-community-user-account</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <springboot.starter.web.version>2.0.4.RELEASE</springboot.starter.web.version>
+        <springboot.starter.test.version>2.0.4.RELEASE</springboot.starter.test.version>
+        <springboot.starter.mybatis.version>1.3.2</springboot.starter.mybatis.version>
     </properties>
 
 
@@ -26,6 +30,31 @@
         <relativePath/>
     </parent>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot.starter.web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${springboot.starter.test.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${springboot.starter.mybatis.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
