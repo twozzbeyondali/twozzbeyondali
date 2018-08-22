@@ -8,6 +8,8 @@ public class AppResult implements Serializable {
 
     private static final int SUCCESS_CODE = 1;
 
+    private static final int PATAMETER_ERROR_CODE = 100;
+
     private boolean success;
 
     private String msg;
@@ -26,6 +28,10 @@ public class AppResult implements Serializable {
 
     public static AppResult getErrorResult(String errorMsg,int errorCode) {
         return new AppResult(false, errorMsg, errorCode, "");
+    }
+
+    public static AppResult getParamErrorResult(String paramErrorMsg) {
+        return new AppResult(false, paramErrorMsg, PATAMETER_ERROR_CODE, "");
     }
 
     private AppResult(boolean success, String msg, int code, Object data) {
