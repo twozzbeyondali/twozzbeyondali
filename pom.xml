@@ -11,6 +11,7 @@
     <modules>
         <module>brickman-community-spider</module>
         <module>brickman-community-user-account</module>
+        <module>brickman-community-commons</module>
     </modules>
 
     <properties>
@@ -20,6 +21,10 @@
         <springboot.starter.web.version>2.0.4.RELEASE</springboot.starter.web.version>
         <springboot.starter.test.version>2.0.4.RELEASE</springboot.starter.test.version>
         <springboot.starter.mybatis.version>1.3.2</springboot.starter.mybatis.version>
+        <springboot.starter.redis.version>1.4.7.RELEASE</springboot.starter.redis.version>
+
+        <mysql.connector.version>6.0.6</mysql.connector.version>
+
     </properties>
 
 
@@ -31,6 +36,7 @@
     </parent>
 
     <dependencyManagement>
+
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -51,6 +57,21 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${springboot.starter.mybatis.version}</version>
             </dependency>
+
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-redis</artifactId>
+                <version>${springboot.starter.redis.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+
 
 
         </dependencies>

@@ -11,16 +11,18 @@
 
     <artifactId>brickman-community-user-account</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>user-account-web</module>
+        <module>user-account-service</module>
+        <module>user-account-dao</module>
+    </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <groupId>cn.com.22aw.opensource</groupId>
+            <artifactId>brickman-community-commons</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
@@ -29,10 +31,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>user-account-${project.version}</finalName>
-    </build>
 
 
 </project>
